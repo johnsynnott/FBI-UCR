@@ -47,13 +47,13 @@ def parse_property_crime_quantity(raw_data):
             #for i in range(1,6):
             #    td[headers[i]] = row[i].strip()
 
-            td['population'] = row[1].strip()
-            td['total'] = row[2].strip()
-            td['burglary'] = row[3].strip()
-            td['larceny_theft'] = row[4].strip()
-            td['vehicle_theft'] = row[5].strip()    
+            td['population'] = int(row[1].strip())
+            td['total'] = int(row[2].strip())
+            td['burglary'] = int(row[3].strip())
+            td['larceny_theft'] = int(row[4].strip())
+            td['vehicle_theft'] = int(row[5].strip())
             
-            results[row[0]] = td
+            results[int(row[0])] = td
     
     return results
 
@@ -68,13 +68,13 @@ def parse_property_crime_rate(raw_data):
             #for i in range(1,6):
             #    td[headers[i]] = row[i].strip()
 
-            td['population'] = row[1].strip()
-            td['total'] = row[2].strip()
-            td['burglary'] = row[3].strip()
-            td['larceny_theft'] = row[4].strip()
-            td['vehicle_theft'] = row[5].strip()    
+            td['population'] = int(row[1].strip())
+            td['total'] = float(row[2].strip())
+            td['burglary'] = float(row[3].strip())
+            td['larceny_theft'] = float(row[4].strip())
+            td['vehicle_theft'] = float(row[5].strip())
             
-            results[row[0]] = td
+            results[int(row[0])] = td
     
     return results
     
@@ -89,14 +89,14 @@ def parse_violent_crime_quantity(raw_data):
             #for i in range(1,7):
             #    td[headers[i]] = row[i].strip()
 
-            td['population'] = row[1].strip()
-            td['total'] = row[2].strip()
-            td['murder'] = row[3].strip()
-            td['rape'] = row[4].strip()
-            td['robbery'] = row[5].strip()
-            td['assault'] = row[6].strip()         
+            td['population'] = int(row[1].strip())
+            td['total'] = int(row[2].strip())
+            td['murder'] = int(row[3].strip())
+            td['rape'] = int(row[4].strip())
+            td['robbery'] = int(row[5].strip())
+            td['assault'] = int(row[6].strip())
             
-            results[row[0]] = td
+            results[int(row[0])] = td
     
     return results
 
@@ -111,13 +111,13 @@ def parse_violent_crime_rate(raw_data):
             #for i in range(1,7):
             #    td[headers[i]] = row[i].strip()
 
-            td['population'] = row[1].strip()
-            td['total'] = row[2].strip()
-            td['murder'] = row[3].strip()
-            td['rape'] = row[4].strip()
-            td['robbery'] = row[5].strip()
-            td['assault'] = row[6].strip()         
+            td['population'] = int(row[1].strip())
+            td['total'] = float(row[2].strip())
+            td['murder'] = float(row[3].strip())
+            td['rape'] = float(row[4].strip())
+            td['robbery'] = float(row[5].strip())
+            td['assault'] = float(row[6].strip())
             
-            results[row[0]] = td
+            results[int(row[0])] = td
     
     return results
