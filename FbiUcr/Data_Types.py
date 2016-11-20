@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 20 10:17:44 2016
+
+@author: john
+"""
+
+VIOLENT_CRIME_QUANTITY = 1
+PROPERTY_CRIME_QUANTITY = 2
+VIOLENT_CRIME_RATE = 3
+PROPERTY_CRIME_RATE = 4
