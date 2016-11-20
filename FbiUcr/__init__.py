@@ -33,7 +33,6 @@ def get_rows(raw_data):
     rows = list(reader)
 
     headers = rows[5]
-    print(headers)
     
     return rows[6:]
 
